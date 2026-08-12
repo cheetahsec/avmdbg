@@ -159,7 +159,7 @@ class Debugger:
             self.client.close()
             adb.forward_remove(self.port, self.serial)
 
-    def __enter__(self) -> "Debugger":
+    def __enter__(self):
         return self
 
     def __exit__(self, *exc_info) -> None:

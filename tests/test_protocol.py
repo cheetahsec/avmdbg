@@ -146,7 +146,7 @@ class ArrayValuesTest(unittest.TestCase):
             .ident(12, 8)
             .build()
         )
-        tag, values = make_client(payload).array_values(55, 0, 2)
+        _tag, values = make_client(payload).array_values(55, 0, 2)
         self.assertEqual(values[0].tag, Tag.STRING)
         self.assertEqual(values[0].value, 11)
         self.assertEqual(values[1].tag, Tag.OBJECT)

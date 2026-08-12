@@ -75,8 +75,8 @@ class CliErrorPathsTest(unittest.TestCase):
         with mock.patch(
             "avmdbg.cli.adb.list_devices", side_effect=AdbError("adb not found")
         ):
-            from io import StringIO
             import sys
+            from io import StringIO
 
             stderr = StringIO()
             old = sys.stderr

@@ -31,3 +31,6 @@ where = ["src"]
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
+
+[project.scripts]
+avmdbg = "avmdbg.cli:main"

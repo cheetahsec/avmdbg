@@ -5,7 +5,7 @@ import socket
 import struct
 import threading
 
-from .constants import HANDSHAKE, HEADER_LEN, REPLY_FLAG
+from .constants import HANDSHAKE, HEADER_LEN
 from .errors import JdwpConnectionError, JdwpError, JdwpTimeoutError
 from .packet import Packet
 

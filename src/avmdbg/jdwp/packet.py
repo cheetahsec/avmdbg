@@ -13,7 +13,7 @@ multi-byte fields are big-endian. The header layout is::
 import itertools
 import struct
 import threading
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from .constants import HEADER_LEN, REPLY_FLAG
 

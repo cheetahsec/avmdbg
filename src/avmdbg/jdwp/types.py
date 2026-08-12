@@ -176,7 +176,7 @@ def tag_from_letter(letter: str) -> Tag:
         return Tag.ARRAY
     if letter == "s":
         return Tag.STRING
-    return tag_for_signature(letter if letter in "[L" else letter)
+    return tag_for_signature(letter)
 
 
 def tag_name(tag: Tag) -> str:

@@ -8,8 +8,7 @@ Requires: adb on PATH, one connected device, and the fixture app
 import os
 import unittest
 
-from avmdbg import Debugger
-from avmdbg import adb
+from avmdbg import Debugger, adb
 
 PACKAGE = "com.example.x0r.demo"
 FIXTURE_APK = os.path.join(os.path.dirname(__file__), "fixtures", "app-debug.apk")
